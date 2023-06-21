@@ -1,0 +1,170 @@
+
+
+:root{
+    --bg-color:#1f242d;
+    --second-bg-color:#323946;
+    --text-color:#fff;
+    --main-color:#0ef;
+}
+
+body{
+    background:var(--bg-color);
+    color:var(--text-color);
+    margin-left: 1.4rem;
+    margin-right: 1.4rem;
+    margin-top: 0px;
+    margin-bottom: 1rem;
+}
+
+.btn{
+    margin-top: 1rem;
+}
+
+.btn:hover{
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.container{
+    margin-top: 4rem;
+}
+
+h1{
+    font-size: 3.5rem;
+    color: #fff;
+}
+h2{
+    font-size: 3rem;
+    padding: 3rem;
+    color: #0ef;
+    
+}
+h3{
+    font-size: 2rem;
+}
+.span{
+    color: var(--main-color);
+}
+.navbar{
+    font-size: 1.2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.navbar img{
+    height: 5rem;
+    width: 5rem;
+}
+
+.navbar a:hover{
+    text-decoration: var(--main-color);
+} 
+
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover{
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+
+/*seccion Experiencia*/
+
+.card-effect{
+    padding-top: 1.5rem;
+}
+
+.card-img-filter{
+    filter: brightness(0.5);
+}
+
+.card{
+    transition-duration: .6s;
+    clip-path: polygon(
+        50% 0,
+        100% 0,
+        100% 50%,
+        100% 100%,
+        50% 100%,
+        0 100%,
+        0 50%,
+        0 0
+    );
+}
+.card-effect:hover .card{
+    clip-path: polygon(
+        50% 0,
+        50% 0,
+        100% 50%,
+        100% 50%,
+        50% 100%,
+        50% 100%,
+        0 50%,
+        0 50%
+    );
+   
+}
+
+.card-img-overlay{
+    transition-duration: 0.6;
+}
+
+.card-effect:hover .card-img-overlay{
+    transform: scale(0.7);
+}
+
+/*Portafolio*/
+
+#portafolio .col-lg-4{
+    margin: 0 !important;
+    padding: 25px;
+}
+
+#portafolio img{
+    border-radius: 1rem;
+    width: 100%;
+    height: 300px;
+
+}
+
+#portafolio img:hover{
+    box-shadow: 0 0 1rem var(--main-color);
+    
+}
+
+.animar{
+    margin: auto;
+    width: 90px;
+    height: 129px;
+    background-image: url(../IMG/123.png);
+}
+
+.animar:hover{
+    animation: xmov .5s steps(4) infinite;
+    cursor: pointer;
+}
+
+@keyframes xmov{
+    100%{
+        background-position-x:-372px ;
+    }
+}
+
+.mybridge{
+    width: 1465px;
+    height: 562;
+}
