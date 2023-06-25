@@ -13,40 +13,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap" rel="stylesheet">
     </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-transparent navbar-dark ">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src="./IMG/logo.webp" alt="Bootstrap" width="30" height="24">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Sobre Mi</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Experiencia</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Portafolio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Contacto</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-    </header>
+  <header >
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark ">
+      <div class="container-lg">
+        <a class="navbar-brand" href="#">
+          <img src="./IMG/logo.webp" alt="Bootstrap" width="30" height="24">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#estudios">Estudios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Cursos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <section class="container">
-        <h3>Hola, Soy </h3>
+  <section class="py-5 bg-black" id="info">
+    <div class="container-lg py-4">
+      <div class="row min-vh-100 align-items-center align-items-center">
+        <div class="col-lg-6 text-center mt-5 mt-md-0">
+          <img src="./IMG/yo2.png" class="imagen" alt="">
+        </div>
+        <div class="col-lg-6 order-md-first mt-5 mt-md-0 texto">
+          <h3>Soy</h3>
           <h1>Osiel Morales</h1>
           <p>Soy un apasionado ingeniero con una visión creativa y una mente curiosa. Mi trayectoria académica incluye  una licenciatura en Ingeniería, donde adquirí una sólida base técnica y habilidades analíticas. Sin embargo, mi pasión por la innovación y la expresión visual me llevó a explorar el mundo del diseño de productos multimedia, donde obtuve una Maestría especializada.
           </p>
@@ -66,6 +66,46 @@
           <p>
             Si estás buscando un profesional apasionado por la ingeniería y el diseño multimedia, comprometido con el aprendizaje continuo y la excelencia en su trabajo, estaré encantado de colaborar contigo y contribuir a proyectos emocionantes. ¡Espero tener la oportunidad de trabajar juntos y hacer una diferencia!
           </p>
-    </section>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="estudios" id="estudios">
+    <div class="container-lg py-4">
+      <div class="row lign-items-center align-items-center">
+        <div class="col-12 text-center">
+          <h2>Estudios</h2>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-center">
+          <div class="card card1 m-2 cb1 text-center">
+            <div class="card-body">
+              <span class="card-uni">UACM</span>
+              <h3 class="card-title mb-4">ISEI</h3>
+              <p class="card-text">Ingeniero en Sistemas Electrónico e Industriales, egresado de la Universidad Autónoma de la Ciudad de México.  </p>
+              <a href="#" class="btn btn-outline-info rounded-pill">CEDULA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 d-flex justify-content-center">
+          <div class="card card1 m-2 cb1 text-center">
+            <div class="card-body">
+              <span class="card-uni">USB</span>
+              <h3 class="card-title mb-4">DPM</h3>
+              <p class="card-text">Mtro. En Diseño de Proyectos Multimedia, egresado de la Universidad Simón Bolívar</p>
+              <a href="#" class="btn btn-outline-info rounded-pill">CEDULA</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="./JS/script.js"></script>
 </body>
 </html>

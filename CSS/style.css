@@ -10,8 +10,6 @@
 body{
     background:var(--bg-color);
     color:var(--text-color);
-    margin-left: 1.4rem;
-    margin-right: 1.4rem;
     margin-top: 0px;
     margin-bottom: 1rem;
 }
@@ -25,7 +23,12 @@ body{
 }
 
 .container{
-    margin-top: 4rem;
+    margin-top: 5rem;
+}
+
+.marketing img {
+    border-radius: 2rem;
+    
 }
 
 h1{
@@ -34,31 +37,36 @@ h1{
 }
 h2{
     font-size: 3rem;
-    padding: 3rem;
-    color: #0ef;
-    
+    padding: 2rem;
+    color: var(--main-color);
+    text-align: center;
 }
 h3{
     font-size: 2rem;
 }
-.span{
+span {
     color: var(--main-color);
 }
 .navbar{
+    padding-top:.5rem;
     font-size: 1.2rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
 }
 
 .navbar img{
-    height: 5rem;
-    width: 5rem;
+    height: 2.5rem;
+    width: 2.5rem;
 }
 
 .navbar a:hover{
     text-decoration: var(--main-color);
 } 
 
+/*home*/
+
+.home img{
+    width: 90%;
+    height: auto;
+}
 
 .social-media a{
     display: inline-flex;
@@ -81,6 +89,47 @@ h3{
     box-shadow: 0 0 1rem var(--main-color);
 }
 
+
+/*Acerca de mi*/
+
+.acercademi img{
+    width: 90%;
+    height: auto;
+}
+
+/*Acerca de mi - card */
+
+.card1{
+    width: 90%;
+    max-width: 400px;
+    padding: 5rem 2.5rem;
+    color: #fff;
+
+    border-radius: 1rem;
+    border: 1px solid transparent;
+
+    backdrop-filter: blur(1rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+
+    border-top-color: var(--main-color);
+    border-left-color: var(--main-color);
+    border-bottom-color: var(--main-color) ;
+    border-right-color: var(--main-color);
+
+}
+
+.cb1{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.card-uni{
+    opacity: 0.2;
+    font-size: 5rem;
+    z-index: -1;
+    position: absolute;
+    top: -1rem;
+    right: 2.5rem;
+}
 
 /*seccion Experiencia*/
 
@@ -126,6 +175,27 @@ h3{
 .card-effect:hover .card-img-overlay{
     transform: scale(0.7);
 }
+/*Marketing*/
+
+.marketing{
+    padding-top: 4rem;
+}
+/*PortafolioMK*/
+#portafolioMK .col-lg-4{
+    margin: 0 !important;
+    padding: 25px;
+}
+
+#portafolioMK img{
+    border-radius: 1rem;
+    width: 100%;
+    
+}
+
+#portafolioMK img:hover{
+    box-shadow: 0 0 1rem var(--main-color);
+    
+}
 
 /*Portafolio*/
 
@@ -145,6 +215,8 @@ h3{
     box-shadow: 0 0 1rem var(--main-color);
     
 }
+
+/*Sprite*/
 
 .animar{
     margin: auto;
