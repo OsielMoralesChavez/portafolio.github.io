@@ -97,6 +97,11 @@ span {
     height: auto;
 }
 
+.info img{
+    width: 90%;
+    height: auto;
+}
+
 /*Acerca de mi - card */
 
 .card1{
@@ -130,6 +135,8 @@ span {
     top: -1rem;
     right: 2.5rem;
 }
+
+
 
 /*seccion Experiencia*/
 
